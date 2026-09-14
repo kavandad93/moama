@@ -1,118 +1,13 @@
-<!doctype html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0d10">
-  <title>معمای حل‌نشده — پرونده 001</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <div class="noise"></div>
-  <header class="topbar">
-    <div class="brand">MOAMA<span> / پرونده‌های حل‌نشده</span></div>
-    <div class="case-status"><i></i> پرونده باز</div>
-  </header>
-
-  <main class="app">
-    <section id="home" class="view active">
-      <div class="folder-hero">
-        <div class="stamp">محرمانه</div>
-        <p class="eyebrow">ARCHIVE / CASE 001</p>
-        <h1>پرونده‌ی <strong>ساعت 23:17</strong></h1>
-        <p class="lead">یک پرونده‌ی داستانی که از چند سند، گزارش و سرنخ تشکیل شده است. همه‌چیز را بررسی کنید؛ جواب در یکی از جزئیات پنهان شده.</p>
-        <div class="case-meta">
-          <span>وضعیت: <b>حل‌نشده</b></span>
-          <span>سطح: متوسط</span>
-          <span>مدارک: 6</span>
-        </div>
-        <button class="primary" data-open="overview">شروع بررسی پرونده</button>
-      </div>
-      <div class="warning"><b>توجه:</b> این پرونده کاملاً داستانی است و هیچ شخص یا رویداد واقعی را بازسازی نمی‌کند.</div>
-    </section>
-
-    <section id="overview" class="view">
-      <div class="section-head"><div><p class="eyebrow">CASE FILE 001</p><h2>پرونده را بررسی کنید</h2></div><button class="ghost" data-open="home">← بازگشت</button></div>
-      <div class="evidence-grid">
-        <button class="evidence" data-open="report"><span>01</span><b>گزارش اولیه</b><small>Initial report</small></button>
-        <button class="evidence" data-open="timeline"><span>02</span><b>خط زمانی</b><small>Timeline</small></button>
-        <button class="evidence" data-open="messages"><span>03</span><b>پیام‌ها</b><small>Messages</small></button>
-        <button class="evidence" data-open="photo"><span>04</span><b>یادداشت پیدا‌شده</b><small>Found note</small></button>
-        <button class="evidence locked" id="lockedEvidence"><span>05</span><b>پیوست رمزگذاری‌شده</b><small>Requires code</small><em>🔒</em></button>
-        <button class="evidence" data-open="solve"><span>06</span><b>نتیجه‌گیری</b><small>Submit theory</small></button>
-      </div>
-    </section>
-
-    <section id="report" class="view document-view">
-      <div class="section-head"><div><p class="eyebrow">DOCUMENT 01</p><h2>گزارش اولیه</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
-      <article class="paper"><div class="paper-head"><b>گزارش شماره 001-A</b><span>ثبت: 08:42</span></div>
-        <p>ساعت <mark>23:17</mark> سیستم هشدار ساختمان برای مدت 43 ثانیه فعال شد. هیچ ورود اجباری ثبت نشده است.</p>
-        <p>دوربین راهروی شرقی بین ساعت 23:16:51 تا 23:18:02 تصویر قابل استفاده‌ای ثبت نکرده است.</p>
-        <p>تنها شیء ثبت‌شده در محل، یک <mark>یادداشت کاغذی</mark> روی میز اتاق بایگانی بود.</p>
-        <div class="signature">— گزارشگر شیفت شب / امضا: ن.ر</div>
-      </article>
-    </section>
-
-    <section id="timeline" class="view">
-      <div class="section-head"><div><p class="eyebrow">DOCUMENT 02</p><h2>خط زمانی</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
-      <div class="timeline">
-        <div><time>22:51</time><p>آخرین ورود ثبت‌شده به ساختمان.</p></div>
-        <div><time>23:09</time><p>چراغ اتاق بایگانی روشن می‌شود.</p></div>
-        <div><time>23:16</time><p>دوربین راهروی شرقی شروع به ثبت خطا می‌کند.</p></div>
-        <div class="important"><time>23:17</time><p>هشدار فعال می‌شود؛ مدت: 43 ثانیه.</p></div>
-        <div><time>23:19</time><p>چراغ بایگانی خاموش می‌شود.</p></div>
-        <div><time>23:41</time><p>یادداشت توسط نگهبان پیدا می‌شود.</p></div>
-      </div>
-    </section>
-
-    <section id="messages" class="view">
-      <div class="section-head"><div><p class="eyebrow">DOCUMENT 03</p><h2>پیام‌های بازیابی‌شده</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
-      <div class="chat">
-        <div class="msg"><span>22:48 — A</span><p>همه‌چیز طبق برنامه است؟</p></div>
-        <div class="msg reply"><span>22:49 — B</span><p>تقریباً. ساعت را فراموش نکن.</p></div>
-        <div class="msg"><span>23:04 — A</span><p>اگر چراغ روشن شد، یعنی هنوز دیر نشده.</p></div>
-        <div class="msg reply"><span>23:11 — B</span><p>سمت شرق را نگاه نکن.</p></div>
-        <div class="msg deleted"><span>23:18 — A</span><p>[پیام حذف شده]</p></div>
-      </div>
-      <p class="hint">سرنخ: بعضی جمله‌ها ممکن است بیشتر از معنای ظاهری‌شان اطلاعات بدهند.</p>
-    </section>
-
-    <section id="photo" class="view">
-      <div class="section-head"><div><p class="eyebrow">DOCUMENT 04</p><h2>یادداشت پیدا‌شده</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
-      <div class="note-card">
-        <div class="hand-note">
-          <p>«سه چیز را به خاطر بسپار:</p>
-          <p>ساعت، جهت، و چیزی که ثبت نشده.</p>
-          <p>جواب را در چیزی پیدا کن که <u>وجود ندارد</u>.»</p>
-          <small>— بدون امضا</small>
-        </div>
-      </div>
-    </section>
-
-    <section id="solve" class="view">
-      <div class="section-head"><div><p class="eyebrow">FINAL STATEMENT</p><h2>نظریه‌ی خود را ثبت کنید</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
-      <div class="solve-box">
-        <p>با توجه به مدارک، چه چیزی در ساعت 23:17 رخ داده بود؟</p>
-        <p class="muted">رمز مرحله‌ی بعد چهار رقم است. سرنخ‌ها را کنار هم قرار دهید.</p>
-        <input id="answer" inputmode="numeric" maxlength="4" placeholder="_ _ _ _" autocomplete="off">
-        <button class="primary" id="submitAnswer">بررسی پاسخ</button>
-        <div id="result" class="result" aria-live="polite"></div>
-      </div>
-    </section>
-
-    <section id="secret" class="view">
-      <div class="secret-screen">
-        <p class="eyebrow">ACCESS GRANTED</p>
-        <h2>پیوست 001-X</h2>
-        <p>در گزارش نوشته شده «23:17» و هشدار 43 ثانیه طول کشیده است. اما زمان ثبت خطای دوربین از 23:16 شروع شده.</p>
-        <p>کد صحیح <b>2317</b> بود؛ با این حال، فایل نشان می‌دهد که هشدار از قبل آماده شده بود. معما هنوز یک پاسخ قطعی ندارد.</p>
-        <div class="final-stamp">پرونده همچنان حل‌نشده است</div>
-        <button class="ghost" data-open="overview">بازگشت به پرونده</button>
-      </div>
-    </section>
-  </main>
-
-  <footer>MOAMA © 2026 · پرونده‌های داستانی تعاملی</footer>
-  <script src="assets/js/app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOAMA — بایگانی پرونده‌ها</title><link rel="stylesheet" href="assets/css/style.css"></head><body><header class="topbar"><div class="brand"><b>MOAMA</b><small>بایگانی پرونده‌های حل‌نشده</small></div><span>ARCHIVE ONLINE · 001 ACTIVE</span></header><main class="app">
+<section id="archive" class="view active"><div class="archive-head"><div><p class="eyebrow">PRIVATE INVESTIGATION ARCHIVE</p><h1>پرونده‌ها</h1><p>پوشه‌های تحقیقاتی، اسناد و مدارک بازیابی‌شده.</p></div><strong>01<small> پرونده باز</small></strong></div><div class="folders"><button class="folder-card" data-open="case"><div class="folder-tab">CASE 001</div><div class="folder-cover"><i>محرمانه</i><small>001 / OPEN</small><h2>پرونده<br><em>سامان نادری</em></h2><p>آخرین مشاهده: 23:09<br>محل: بایگانی مرکزی<br>وضعیت: حل‌نشده</p><img src="assets/images/missing-person.svg" alt="تصویر پرونده"><footer><b>پرونده باز</b> باز کردن پوشه ←</footer></div></button></div><div class="archive-note">ARCHIVE NOTE · فعلاً فقط یک پرونده در بایگانی موجود است.</div></section>
+<section id="case" class="view"><div class="case-toolbar"><button data-open="archive">← بایگانی</button><span>CASE 001 / INVESTIGATION MODE</span><b>محرمانه</b></div><div class="case-header"><div><p class="eyebrow">CASE FILE / 001</p><h1>پرونده سامان نادری</h1><p>سامان نادری، کارمند شیفت شب، پس از آخرین ثبت ورودش دیگر در ساختمان دیده نشد.</p></div><div class="case-id">STATUS<strong>UNSOLVED</strong><small>آخرین بروزرسانی 08:42</small></div></div><div class="case-layout"><aside class="case-nav"><b>پرونده 001</b><button data-open="overview">01 · نمای کلی</button><button data-open="report">02 · گزارش اصلی</button><button data-open="evidence">03 · مدارک و تصاویر</button><button data-open="timeline">04 · خط زمانی</button><button data-open="statements">05 · اظهارات</button><button data-open="messages">06 · پیام‌ها</button><button data-open="people">07 · افراد مرتبط</button><button class="final" data-open="solve">08 · ثبت نظریه</button></aside><div class="case-content">
+<section id="overview" class="case-view active"><div class="overview"><article class="paper"><small>CASE 001 / ORIGINAL FILE</small><h2>یادداشت بازپرس</h2><p>سامان نادری، ۳۴ ساله، مسئول شیفت شب بایگانی مرکزی بود. ساعت ۲۳:۰۹ آخرین ورود معتبر او ثبت شد. یازده دقیقه بعد، دوربین راهروی شرقی برای ۷۱ ثانیه از کار افتاد.</p><p>وقتی نگهبان به اتاق رسید، در قفل نبود؛ چراغ روشن بود؛ میز مرتب بود؛ اما سامان آنجا نبود.</p><blockquote>«اگر چیزی را پیدا نمی‌کنید، اول ببینید چه کسی می‌خواسته آن را پیدا نکنید.»</blockquote><b>بازپرس پرونده · ن.ر.</b></article><div><figure class="photo-card"><span>SUBJECT / LAST KNOWN PHOTO</span><img src="assets/images/missing-person.svg" alt="تصویر سامان نادری"><figcaption>سامان نادری · آخرین تصویر ثبت‌شده</figcaption></figure><figure class="photo-card scene"><span>SCENE PHOTO</span><img src="assets/images/evidence-room.svg" alt="نمای اتاق بایگانی"></figure></div></div><div class="clues"><b>سرنخ‌های مهم</b><span>23:17</span><span>دوربین شرقی</span><span>کلید یدکی</span><span>پیام حذف‌شده</span></div></section>
+<section id="report" class="case-view"><h2>گزارش اصلی حادثه</h2><article class="paper large"><small>DOCUMENT 02 · ORIGINAL</small><p>در ساعت ۲۳:۱۷ سیستم هشدار ساختمان به مدت ۴۳ ثانیه فعال شد. هیچ ورود اجباری ثبت نشده است.</p><p>دوربین شرقی از ۲۳:۱۶:۵۱ تا ۲۳:۱۸:۰۲ تصویر قابل استفاده‌ای نداشت. لاگ سیستم می‌گوید فرمان قطع از شبکه داخلی صادر شده است.</p><p>روی میز، برگه‌ای با سه کلمه پیدا شد: «شرق / کلید / دیر».</p><p>یک کلید یدکی از جعبه نگهبانی کم شده بود و دفتر تحویل آن برای همان شب خالی است.</p><div class="redacted">بخش محرمانه · نام کاربر سیستم [████████]</div></article></section>
+<section id="evidence" class="case-view"><h2>مدارک و تصاویر</h2><div class="evidence-board"><figure><img src="assets/images/evidence-room.svg"><figcaption>A-01 · اتاق بایگانی · 23:44</figcaption></figure><article><small>B-02 / NOTE</small><h3>یادداشت روی میز</h3><p>شرق<br>کلید<br>دیر</p></article><article><small>C-03 / KEY LOG</small><h3>دفتر تحویل کلید</h3><p>23:02 · کلید یدکی · امضا: —</p><p>23:31 · بازگشت · ثبت نشده</p></article><article class="dark"><small>D-04 / SYSTEM</small><h3>لاگ شبکه</h3><code>23:16:51 CAM-EAST OFFLINE<br>23:17:04 ALARM ACTIVE<br>23:18:02 CAM-EAST ONLINE</code></article></div></section>
+<section id="timeline" class="case-view"><h2>خط زمانی بازسازی‌شده</h2><div class="timeline"><p><b>22:51</b> آخرین ورود سامان</p><p><b>23:02</b> کلید یدکی خارج می‌شود</p><p><b>23:09</b> چراغ بایگانی روشن می‌شود</p><p class="alert"><b>23:16:51</b> دوربین شرقی قطع می‌شود</p><p class="alert"><b>23:17</b> هشدار فعال می‌شود</p><p><b>23:18:02</b> دوربین آنلاین می‌شود</p><p><b>23:41</b> نگهبان وارد اتاق می‌شود</p></div></section>
+<section id="statements" class="case-view"><h2>اظهارات ثبت‌شده</h2><div class="cards"><article><b>نادر کاظمی</b><small>نگهبان شب</small><p>می‌گوید هنگام هشدار در اتاق نگهبانی بوده و درباره کلید یدکی چیزی نمی‌داند.</p></article><article><b>لیلا مرادی</b><small>کارمند بایگانی</small><p>می‌گوید ساعت ۲۲:۴۰ ساختمان را ترک کرده و خروجش در دوربین ثبت شده است.</p></article><article><b>پیمان فرهمند</b><small>مسئول سیستم</small><p>می‌گوید قطع دوربین می‌تواند خطای شبکه باشد و هنگام هشدار پنل را دیده است.</p></article></div></section>
+<section id="messages" class="case-view"><h2>پیام‌های بازیابی‌شده</h2><div class="chat"><p>22:48 / سامان · همه‌چیز طبق برنامه است؟</p><p>22:49 / مخاطب ناشناس · تقریباً. ساعت را فراموش نکن.</p><p>23:04 / سامان · اگر چراغ روشن شد، یعنی هنوز دیر نشده.</p><p>23:11 / مخاطب ناشناس · سمت شرق را نگاه نکن.</p><p class="deleted">23:18 / سامان · [پیام حذف شده]</p></div></section>
+<section id="people" class="case-view"><h2>افراد مرتبط</h2><div class="cards"><article><b>نادر کاظمی</b><small>نگهبان شب</small><p>دسترسی فیزیکی به ساختمان و جعبه کلیدها.</p></article><article><b>لیلا مرادی</b><small>کارمند بایگانی</small><p>با سامان در همان بخش کار می‌کرد.</p></article><article><b>پیمان فرهمند</b><small>مسئول سیستم</small><p>دسترسی فنی به شبکه و دوربین‌ها.</p></article></div></section>
+<section id="solve" class="case-view"><div class="final"><small>FINAL THEORY / 001</small><h2>چه کسی پشت ماجراست؟</h2><p>پاسخ باید شامل نام فرد و دلیل یا عمل او باشد. عدد به‌تنهایی کافی نیست.</p><textarea id="answer" rows="5" placeholder="نظریه‌ی خود را بنویس..."></textarea><button class="primary" id="submitAnswer">ثبت نظریه</button><div id="result"></div></div></section>
+<section id="resolved" class="case-view"><div class="resolution"><span>CASE ANALYSIS COMPLETE</span><div>✓</div><h2>نظریه با شواهد سازگار است.</h2><p>تحلیل شما با زمان‌بندی، دسترسی‌ها و مدارک دیجیتال پرونده بیشترین سازگاری را دارد.</p><button data-open="archive">بازگشت به بایگانی</button></div></section>
+</div></div></section></main><footer>MOAMA / FICTIONAL CASE ARCHIVE · 2026</footer><script src="assets/js/app.js"></script></body></html>

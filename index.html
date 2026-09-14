@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <title>معمای حل‌نشده — پرونده 001</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <div class="brand">MOAMA<span> / پرونده‌های حل‌نشده</span></div>
+    <div class="case-status"><i></i> پرونده باز</div>
+  </header>
+
+  <main class="app">
+    <section id="home" class="view active">
+      <div class="folder-hero">
+        <div class="stamp">محرمانه</div>
+        <p class="eyebrow">ARCHIVE / CASE 001</p>
+        <h1>پرونده‌ی <strong>ساعت 23:17</strong></h1>
+        <p class="lead">یک پرونده‌ی داستانی که از چند سند، گزارش و سرنخ تشکیل شده است. همه‌چیز را بررسی کنید؛ جواب در یکی از جزئیات پنهان شده.</p>
+        <div class="case-meta">
+          <span>وضعیت: <b>حل‌نشده</b></span>
+          <span>سطح: متوسط</span>
+          <span>مدارک: 6</span>
+        </div>
+        <button class="primary" data-open="overview">شروع بررسی پرونده</button>
+      </div>
+      <div class="warning"><b>توجه:</b> این پرونده کاملاً داستانی است و هیچ شخص یا رویداد واقعی را بازسازی نمی‌کند.</div>
+    </section>
+
+    <section id="overview" class="view">
+      <div class="section-head"><div><p class="eyebrow">CASE FILE 001</p><h2>پرونده را بررسی کنید</h2></div><button class="ghost" data-open="home">← بازگشت</button></div>
+      <div class="evidence-grid">
+        <button class="evidence" data-open="report"><span>01</span><b>گزارش اولیه</b><small>Initial report</small></button>
+        <button class="evidence" data-open="timeline"><span>02</span><b>خط زمانی</b><small>Timeline</small></button>
+        <button class="evidence" data-open="messages"><span>03</span><b>پیام‌ها</b><small>Messages</small></button>
+        <button class="evidence" data-open="photo"><span>04</span><b>یادداشت پیدا‌شده</b><small>Found note</small></button>
+        <button class="evidence locked" id="lockedEvidence"><span>05</span><b>پیوست رمزگذاری‌شده</b><small>Requires code</small><em>🔒</em></button>
+        <button class="evidence" data-open="solve"><span>06</span><b>نتیجه‌گیری</b><small>Submit theory</small></button>
+      </div>
+    </section>
+
+    <section id="report" class="view document-view">
+      <div class="section-head"><div><p class="eyebrow">DOCUMENT 01</p><h2>گزارش اولیه</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
+      <article class="paper"><div class="paper-head"><b>گزارش شماره 001-A</b><span>ثبت: 08:42</span></div>
+        <p>ساعت <mark>23:17</mark> سیستم هشدار ساختمان برای مدت 43 ثانیه فعال شد. هیچ ورود اجباری ثبت نشده است.</p>
+        <p>دوربین راهروی شرقی بین ساعت 23:16:51 تا 23:18:02 تصویر قابل استفاده‌ای ثبت نکرده است.</p>
+        <p>تنها شیء ثبت‌شده در محل، یک <mark>یادداشت کاغذی</mark> روی میز اتاق بایگانی بود.</p>
+        <div class="signature">— گزارشگر شیفت شب / امضا: ن.ر</div>
+      </article>
+    </section>
+
+    <section id="timeline" class="view">
+      <div class="section-head"><div><p class="eyebrow">DOCUMENT 02</p><h2>خط زمانی</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
+      <div class="timeline">
+        <div><time>22:51</time><p>آخرین ورود ثبت‌شده به ساختمان.</p></div>
+        <div><time>23:09</time><p>چراغ اتاق بایگانی روشن می‌شود.</p></div>
+        <div><time>23:16</time><p>دوربین راهروی شرقی شروع به ثبت خطا می‌کند.</p></div>
+        <div class="important"><time>23:17</time><p>هشدار فعال می‌شود؛ مدت: 43 ثانیه.</p></div>
+        <div><time>23:19</time><p>چراغ بایگانی خاموش می‌شود.</p></div>
+        <div><time>23:41</time><p>یادداشت توسط نگهبان پیدا می‌شود.</p></div>
+      </div>
+    </section>
+
+    <section id="messages" class="view">
+      <div class="section-head"><div><p class="eyebrow">DOCUMENT 03</p><h2>پیام‌های بازیابی‌شده</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
+      <div class="chat">
+        <div class="msg"><span>22:48 — A</span><p>همه‌چیز طبق برنامه است؟</p></div>
+        <div class="msg reply"><span>22:49 — B</span><p>تقریباً. ساعت را فراموش نکن.</p></div>
+        <div class="msg"><span>23:04 — A</span><p>اگر چراغ روشن شد، یعنی هنوز دیر نشده.</p></div>
+        <div class="msg reply"><span>23:11 — B</span><p>سمت شرق را نگاه نکن.</p></div>
+        <div class="msg deleted"><span>23:18 — A</span><p>[پیام حذف شده]</p></div>
+      </div>
+      <p class="hint">سرنخ: بعضی جمله‌ها ممکن است بیشتر از معنای ظاهری‌شان اطلاعات بدهند.</p>
+    </section>
+
+    <section id="photo" class="view">
+      <div class="section-head"><div><p class="eyebrow">DOCUMENT 04</p><h2>یادداشت پیدا‌شده</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
+      <div class="note-card">
+        <div class="hand-note">
+          <p>«سه چیز را به خاطر بسپار:</p>
+          <p>ساعت، جهت، و چیزی که ثبت نشده.</p>
+          <p>جواب را در چیزی پیدا کن که <u>وجود ندارد</u>.»</p>
+          <small>— بدون امضا</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="solve" class="view">
+      <div class="section-head"><div><p class="eyebrow">FINAL STATEMENT</p><h2>نظریه‌ی خود را ثبت کنید</h2></div><button class="ghost" data-open="overview">← پرونده</button></div>
+      <div class="solve-box">
+        <p>با توجه به مدارک، چه چیزی در ساعت 23:17 رخ داده بود؟</p>
+        <p class="muted">رمز مرحله‌ی بعد چهار رقم است. سرنخ‌ها را کنار هم قرار دهید.</p>
+        <input id="answer" inputmode="numeric" maxlength="4" placeholder="_ _ _ _" autocomplete="off">
+        <button class="primary" id="submitAnswer">بررسی پاسخ</button>
+        <div id="result" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="secret" class="view">
+      <div class="secret-screen">
+        <p class="eyebrow">ACCESS GRANTED</p>
+        <h2>پیوست 001-X</h2>
+        <p>در گزارش نوشته شده «23:17» و هشدار 43 ثانیه طول کشیده است. اما زمان ثبت خطای دوربین از 23:16 شروع شده.</p>
+        <p>کد صحیح <b>2317</b> بود؛ با این حال، فایل نشان می‌دهد که هشدار از قبل آماده شده بود. معما هنوز یک پاسخ قطعی ندارد.</p>
+        <div class="final-stamp">پرونده همچنان حل‌نشده است</div>
+        <button class="ghost" data-open="overview">بازگشت به پرونده</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>MOAMA © 2026 · پرونده‌های داستانی تعاملی</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
